@@ -1,0 +1,14 @@
+<% if(success && success.length){ %>
+    <!--     boootsrtap-succ-alert      collapsing-cross-btn     centering a    djusting-crossbtn position -->
+    <div class="alert alert-success alert-dismissable fade show col-6 offset-3 d-flex justify-content-between" role="alert">
+        <%= success %>
+        <button type="button" class="btn-close ms-2" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
+<% if(error && error.length){ %>
+    <!--   boootsrtap-danger-alert      collapsing-cross-btn     centering a    djusting-crossbtn position -->
+    <div class="alert alert-danger alert-dismissable fade show col-6 offset-3 d-flex justify-content-between" role="alert">
+        <%= error %>
+        <button type="button" class="btn-close ms-2" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
